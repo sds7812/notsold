@@ -1,0 +1,28 @@
+{
+  "name": "excel-processor",
+  "version": "1.0.0",
+  "description": "엑셀 파일 업로드 및 가공 웹사이트",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "file-saver": "^2.0.5",
+    "jspdf": "^3.0.1",
+    "vue": "^3.3.4",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.5"
+  },
+  "keywords": [
+    "vue",
+    "excel",
+    "file-upload"
+  ],
+  "author": "",
+  "license": "MIT"
+}
