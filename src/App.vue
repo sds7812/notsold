@@ -29,7 +29,6 @@
         @drop="handleFileDrop"
         @dragover.prevent="isDragOver = true"
         @dragleave.prevent="isDragOver = false"
-        @click="triggerFileInput"
       >
         <div v-if="!uploadedFile">
           <div style="font-size: 48px; margin-bottom: 16px">📁</div>
