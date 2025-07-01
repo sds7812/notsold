@@ -17,6 +17,13 @@
         >
           🖨️ PDF로 저장(인쇄)
         </button>
+        <button
+          @click="resetAll"
+          class="btn btn-secondary"
+          style="margin-top: 16px; margin-left: 8px"
+        >
+          🔄 다시올리기
+        </button>
       </div>
     </div>
 
@@ -414,6 +421,20 @@ export default {
       setTimeout(() => {
         document.title = '미판매내역';
       }, 1000);
+    },
+
+    /**
+     * 모든 상태를 초기화하는 함수 (다시올리기, PDF 저장 후 등에서 사용)
+     */
+    resetAll() {
+      // 한글 주석: 모든 데이터와 상태를 초기화합니다.
+      this.uploadedFile = null;
+      this.excelData = [];
+      this.tableHeaders = [];
+      this.zeroSalesData = [];
+      this.processedData = [];
+      this.statusMessage = '';
+      this.statusType = 'info';
     },
   },
 };
